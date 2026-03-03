@@ -13,25 +13,27 @@ This project outlines a comprehensive 6-stage data science methodology to addres
 
 ## The 6-Stage Methodology
 
+<img src="CRISP-DM_Process_Diagram.png" width="540">
+
 **1. Business Understanding**
    
-* **Goal:** Improve cybersecurity and reduce manual filtering time.
+* **Goal:** Improve cybersecurity and reduce employees' manual filtering time.
 
-* **Approach:** Binary Classification (Predicting "Legitimate" vs "Illegitimate").
+* **Approach:** Binary Classification (Predicting "Legitimate" vs "Illegitimate" emails).
 
-* **Success Metric:** Decrease in successful phishing incidents reported.
+* **Success Metric:** Decrease in successful phishing incidents reported to IT department.
 
 **2. Data Understanding**
 
 * **Data Sources:** IP Reputation services, Domain lists, and 3 years of historical labeled email archives.
 
-* **Quality Check:** Verified header integrity and addressed class imbalance in phishing samples.
+* **Quality Check:** Verified header integrity and addressed class imbalance in spam/phishing samples.
 
 **3. Data Preparation**
 
 * **Text Pre-processing:** HTML stripping, lowercase conversion, and punctuation removal.
 
-* **Feature Engineering:** Tokenization and removal of stop words (e.g., "the", "and").
+* **Feature Engineering:** Tokenization and removal of stop words (e.g., "the", "and", "is").
 
 * **Data Splitting:** 80/20 Train/Test split for model validation.
 
@@ -51,7 +53,7 @@ This project outlines a comprehensive 6-stage data science methodology to addres
 
 * **Strategy:** Canary rollout (initial small user group) followed by full integration into the email gateway.
 
-* **Maintenance:** Established a feedback loop via "Report Spam" buttons for continuous model retraining.
+* **Maintenance:** Established a feedback loop via "Report Spam" and "Not Spam" buttons for continuous model retraining.
 
 
 
